@@ -1,0 +1,139 @@
+/*
+	Azul Primario: #00BCD4;
+	Verde acentuado: #8BC34A;
+	Texto / Iconos: #FFFFFF;
+	Texto Primario: #212121;
+	Texto Secundario: #BDBDBD;
+	Color de division: #BDBDBD;
+	Azul Primario Oscuro: #0097A7;
+	Azul primario suave: #B2EBF2;
+ */
+html{font-family: Sarala, Helvetica, Arial, sans-serif;}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #00BCD4;
+}
+
+a:hover{
+	opacity: 0.8;
+}
+
+.paragraph{
+	padding-left: 5px;
+	line-height: 1.8em;
+	font-weight: 300;
+}
+
+.title{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container{
+	background: #f9f586;
+	background-image: -webkit-linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+	background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.content{
+	max-width: 960px;
+	width: 100%;
+	height: 70vh;
+	background-color: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 4px;
+	padding: 1.8em;
+	overflow-y: scroll;
+}
+
+.content{
+	height: 500px;
+}
+td{
+	display: block;
+	width:100%;
+}
+th{
+	display:none;
+}
+
+.table{
+	width:100%;
+	border-spacing: 0;
+}
+
+.table td, .table th{
+	padding: 1em;
+	text-align: left;
+}
+
+.table tr:nth-child(even){
+	background-color:#def8fc;
+} 
+
+.fa-star{
+	color:yellow;
+}
+
+.title-item{
+	/*
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #BDBDBD;
+	*/
+	
+	border-bottom: solid 2px #8BC34A;
+	padding-bottom:1em;
+	font-size: 2em;
+}
+
+.position{
+	background-color: #8BC34A;
+	padding: 0.5em;
+	color:white;
+	border-radius: 4px;
+	margin-right: 0.5em;
+}
+
+.main-image{
+	float:left;
+	margin-right: 1em;
+	height: 200px ;
+}
+
+@media (min-width: 550px){
+	th{
+		display:table-cell;
+
+	}
+	td{
+		width: auto;
+		display: table-cell;
+	}
+	td:nth-of-type(1){
+	font-size: 1em;
+	font-weight: bold;
+	color: #8BC34A;
+	}
+	.content{
+		padding:1.8em;
+	}
+
+}
+
+@media (min-height: 550px){
+	.content{
+		height: 500px;
+	}
+}
+
